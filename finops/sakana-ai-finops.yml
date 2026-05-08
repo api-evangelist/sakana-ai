@@ -10,13 +10,14 @@ tags:
 - AI
 - LLM
 - Research
-- Foundation Models
-- Nature-Inspired
+- Multi-Agent
 - FinOps
-- Cost Management
 - FOCUS
-description: FOCUS-aligned FinOps placeholder for Sakana AI. Pipeline will replace with real billing details.
-notes: Initial scaffold — billing model has not yet been reconciled.
+description: >-
+  FOCUS-aligned FinOps placeholder for Sakana AI Fugu. Billing model not yet published as
+  Fugu is in beta. Anticipated meter dimensions include orchestrated-task counts and
+  underlying-model token spend pass-through.
+notes: Update once Fugu pricing surfaces.
 sources:
 - https://sakana.ai/
 - https://focus.finops.org/focus-specification/v1-3/
@@ -27,9 +28,9 @@ alignedWith:
   dataSpecVersion: '1.3'
   dataSpecUrl: https://focus.finops.org/focus-specification/v1-3/
 publisherName: Sakana AI
-serviceCategory: AI
+serviceCategory: AI and Machine Learning
 billingModel:
-  pricingCategory: To Be Reconciled
+  pricingCategory: Beta (Pricing TBD)
   billingFrequency: Monthly
   billingCurrency: USD
   chargeCategories:
@@ -37,30 +38,33 @@ billingModel:
   - Purchase
   - Adjustment
 focusColumns:
-  ServiceName: Sakana AI
-  ServiceCategory: AI
+  ServiceName: Sakana Fugu
+  ServiceCategory: AI and Machine Learning
   ProviderName: Sakana AI
   PublisherName: Sakana AI
   InvoiceIssuerName: Sakana AI
   BillingCurrency: USD
   ChargeCategory: Usage
 meters:
-- name: api_usage
-  description: Catch-all meter pending reconciliation.
-  unit: varies
+- name: orchestrated_tasks
+  description: Tasks routed by Fugu (anticipated meter).
+  unit: tasks
   aggregation: sum
-  dimensions:
-  - account
-  - resource
+  dimensions: [variant, account]
+- name: underlying_model_spend
+  description: Pass-through cost of underlying frontier model calls (anticipated).
+  unit: usd
+  aggregation: sum
+  dimensions: [provider, model, account]
 principles:
 - name: Visibility
-  description: Pull provider invoices or usage exports until a self-serve usage feed is documented.
+  description: Beta participants should track Fugu usage and underlying model costs separately.
 - name: Allocation
-  description: Tag invoice line items to consuming business units in your FinOps store.
+  description: Use API key per workload/team; map underlying model spend to consumers.
 - name: Optimization
-  description: Levers depend on the provider's billing model; review at renewal once reconciled.
+  description: Choose Fugu Mini for low-latency paths; Fugu Ultra for complex orchestrations.
 - name: Accountability
-  description: Assign a contract owner to review billing against negotiated terms.
+  description: Engage Sakana for production pricing once GA.
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com

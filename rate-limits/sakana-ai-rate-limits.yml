@@ -10,26 +10,25 @@ tags:
 - AI
 - LLM
 - Research
-- Foundation Models
-- Nature-Inspired
+- Multi-Agent
 - Rate Limiting
-- Quotas
-- Throttling
-description: Placeholder rate-limit artifact for Sakana AI. Replace with real limits once researched.
-notes: Initial scaffold — limits have not yet been reconciled.
+description: >-
+  Sakana Fugu rate limits are not published; service is in beta. Apply general OpenAI-
+  compatible client patterns (exponential backoff, Retry-After).
+notes: Update once Fugu publishes a public rate-limit policy.
 sources:
 - https://sakana.ai/
 responseCodes:
   throttled: 429
 limits:
-- name: Default
+- name: Beta Default
   scope: account
-  metric: varies
-  limit: see provider documentation
-  notes: Pending reconciliation.
+  metric: requests-per-minute
+  limit: see beta enrollment
+  notes: Allocated per beta program participant.
 policies:
 - name: Backoff Strategy
-  description: Clients should implement exponential backoff with jitter and honor any Retry-After header.
+  description: Exponential backoff with jitter; honor Retry-After.
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com

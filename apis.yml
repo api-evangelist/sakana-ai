@@ -3,21 +3,59 @@ url: https://raw.githubusercontent.com/api-evangelist/sakana-ai/refs/heads/main/
 name: Sakana AI
 x-type: company
 description: >-
-  Sakana AI is a Tokyo-based AI research lab founded by ex-Google researchers, focused on collective intelligence, evolutionary optimization, and nature-inspired AI methods. Publishes models including AI Scientist and Reincarnation.
+  Sakana AI is a Tokyo-based AI R&D company founded by ex-Google researchers focused on
+  collective intelligence, evolutionary optimization, and nature-inspired AI methods. The
+  company's first commercial product is Sakana Fugu - a multi-agent orchestration system
+  with an OpenAI-compatible API (currently in beta). Sakana also publishes Sakana Chat
+  (consumer) and Sakana Marlin (beta).
 image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
 tags:
   - AI
   - LLM
   - Research
   - Foundation Models
-  - Nature-Inspired
+  - Multi-Agent
+  - Orchestration
 created: '2026-05-08'
 modified: '2026-05-08'
 specificationVersion: '0.19'
-apis: []
+apis:
+  - aid: sakana-ai:fugu
+    name: Sakana Fugu API (Beta)
+    description: >-
+      Multi-agent orchestration system that routes tasks across frontier foundation models
+      (OpenAI, Anthropic, Google). OpenAI-compatible API surface. Two variants - Fugu Mini
+      (low-latency) and Fugu Ultra (high performance). Beta access required.
+    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    humanURL: https://sakana.ai/
+    baseURL: https://api.sakana.ai
+    tags:
+      - AI
+      - LLM
+      - Multi-Agent
+      - Orchestration
+      - OpenAI Compatible
+      - Beta
+    properties:
+      - type: ProductPage
+        url: https://sakana.ai/
+      - type: BetaSignup
+        url: https://sakana.ai/
+      - type: GitHub
+        url: https://github.com/SakanaAI
+      - type: HuggingFace
+        url: https://huggingface.co/SakanaAI
+      - type: Blog
+        url: https://sakana.ai/blog/
+      - type: Status
+        url: 'Beta: applications opened April 2026'
 common:
   - type: Website
     url: https://sakana.ai/
+  - type: GitHub
+    url: https://github.com/SakanaAI
+  - type: HuggingFace
+    url: https://huggingface.co/SakanaAI
   - type: Plans
     url: plans/sakana-ai-plans-pricing.yml
   - type: RateLimits

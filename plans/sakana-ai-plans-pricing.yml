@@ -10,32 +10,55 @@ tags:
 - AI
 - LLM
 - Research
-- Foundation Models
-- Nature-Inspired
+- Multi-Agent
 - Plans
-description: Placeholder plans/pricing artifact for Sakana AI. Replace with real published pricing once
-  the pipeline researches the provider's plans page.
-notes: Initial scaffold — plans/pricing have not yet been reconciled against the provider's documentation.
+description: >-
+  Sakana AI's commercial Fugu API is in beta. Public pricing has not been published as of
+  May 2026. Beta access is application-based. Sakana also releases open-weight research
+  models on Hugging Face under research licenses.
+notes: >-
+  Update this artifact once Sakana publishes Fugu pricing. Until then the plan structure
+  is best-known-only - Fugu Mini and Fugu Ultra are the two announced variants.
 sources:
 - https://sakana.ai/
+- https://aihola.com/article/sakana-fugu-orchestration-beta
+- https://huggingface.co/SakanaAI
 plans:
-- id: sakana-ai-default
-  name: To Be Reconciled
-  type: enterprise
-  description: Initial scaffold; replace with provider plan tiers once pricing is reconciled.
+- id: sakana-ai-fugu-beta
+  name: Fugu Beta (Application Only)
+  type: beta
+  description: Beta access to Sakana Fugu by application; pricing not yet published.
   entries:
-  - label: API Access
-    name: api_access
-    type: flat
-    metric: varies
+  - label: Beta Access
+    name: fugu_beta
+    type: beta
+    metric: access
     limit: -1
     timeFrame: usage
     geo: global
     unit: 1
-    price: see https://sakana.ai/
+    price: not yet published
     userMultiplied: false
   elements:
-  - name: Pending Reconciliation
+  - name: Fugu Mini (low-latency)
+  - name: Fugu Ultra (high performance)
+- id: sakana-ai-research-models
+  name: Open-Weight Research Models
+  type: free
+  description: Sakana AI publishes research models on Hugging Face under research/non-commercial licenses.
+  entries:
+  - label: Open Weights
+    name: research_weights
+    type: free
+    metric: weights
+    limit: -1
+    timeFrame: usage
+    geo: global
+    unit: 1
+    price: '0.00'
+    userMultiplied: false
+  elements:
+  - name: Various research checkpoints (see HuggingFace)
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
