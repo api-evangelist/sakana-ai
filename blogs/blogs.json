@@ -1,0 +1,13 @@
+{
+  "repo": "sakana-ai",
+  "feeds": [
+    {
+      "source": "https://sakana.ai/blog/",
+      "feed_url": "https://sakana.ai/feed",
+      "title": "Blog",
+      "saved": 10
+    }
+  ],
+  "fetched": "2026-05-09T20:17:51Z",
+  "post_count": 10
+}
