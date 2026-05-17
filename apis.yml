@@ -1,7 +1,7 @@
 aid: sakana-ai
 url: https://raw.githubusercontent.com/api-evangelist/sakana-ai/refs/heads/main/apis.yml
 name: Sakana AI
-x-type: company
+kind: company
 description: >-
   Sakana AI is a Tokyo-based AI R&D company founded by ex-Google researchers focused on
   collective intelligence, evolutionary optimization, and nature-inspired AI methods. The
@@ -47,7 +47,7 @@ apis:
         url: https://huggingface.co/SakanaAI
       - type: Blog
         url: https://sakana.ai/blog/
-      - type: Status
+      - type: StatusPage
         url: 'Beta: applications opened April 2026'
 common:
   - type: Website
