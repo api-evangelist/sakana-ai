@@ -50,6 +50,8 @@ apis:
       - type: StatusPage
         url: 'Beta: applications opened April 2026'
 common:
+  - type: LinkedIn
+    url: https://www.linkedin.com/company/sakana-ai
   - type: Website
     url: https://sakana.ai/
   - type: GitHub
