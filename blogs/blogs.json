@@ -2,12 +2,20 @@
   "repo": "sakana-ai",
   "feeds": [
     {
-      "source": "https://sakana.ai/blog/",
+      "source": "https://sakana.ai/feed",
       "feed_url": "https://sakana.ai/feed",
-      "title": "Blog",
-      "saved": 1
+      "title": "",
+      "saved": 0,
+      "method": "feed"
+    },
+    {
+      "source": "https://huggingface.co/SakanaAI",
+      "feed_url": "https://huggingface.co/SakanaAI",
+      "title": "",
+      "saved": 0,
+      "method": "none"
     }
   ],
-  "fetched": "2026-05-17T20:20:35Z",
-  "post_count": 11
+  "fetched": "2026-06-01T23:35:02Z",
+  "post_count": 14
 }
