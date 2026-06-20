@@ -8,7 +8,7 @@ description: >-
   company's first commercial product is Sakana Fugu - a multi-agent orchestration system
   with an OpenAI-compatible API (currently in beta). Sakana also publishes Sakana Chat
   (consumer) and Sakana Marlin (beta).
-image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
 tags:
   - AI
   - LLM
@@ -26,7 +26,7 @@ apis:
       Multi-agent orchestration system that routes tasks across frontier foundation models
       (OpenAI, Anthropic, Google). OpenAI-compatible API surface. Two variants - Fugu Mini
       (low-latency) and Fugu Ultra (high performance). Beta access required.
-    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
     humanURL: https://sakana.ai/
     baseURL: https://api.sakana.ai
     tags:
