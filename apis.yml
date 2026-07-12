@@ -50,6 +50,10 @@ apis:
       - type: StatusPage
         url: 'Beta: applications opened April 2026'
 common:
+  - type: VulnerabilityDisclosure
+    url: security/sakana-ai-vulnerability-disclosure.yml
+  - type: DomainSecurity
+    url: security/sakana-ai-domain-security.yml
   - type: LinkedIn
     url: https://www.linkedin.com/company/sakana-ai
   - type: Website
