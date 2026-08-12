@@ -59,8 +59,6 @@ apis:
         url: https://huggingface.co/SakanaAI
       - type: Blog
         url: https://sakana.ai/blog/
-      - type: StatusPage
-        url: 'Beta: applications opened April 2026'
 common:
   - type: VulnerabilityDisclosure
     url: security/sakana-ai-vulnerability-disclosure.yml
