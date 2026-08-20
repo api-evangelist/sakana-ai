@@ -22,6 +22,13 @@ accessModel:
   method: derived
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/sakana-ai.png
 tags:
+  - Artificial Intelligence
+  - LLM
+  - Research
+  - Foundation Models
+  - Multi-Agent
+  - Orchestration
+tags_raw:
   - AI
   - LLM
   - Research
@@ -42,6 +49,13 @@ apis:
     humanURL: https://sakana.ai/
     baseURL: https://api.sakana.ai
     tags:
+      - Artificial Intelligence
+      - LLM
+      - Multi-Agent
+      - Orchestration
+      - OpenAI-Compatible
+      - Beta
+    tags_raw:
       - AI
       - LLM
       - Multi-Agent
