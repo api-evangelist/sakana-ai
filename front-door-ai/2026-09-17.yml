@@ -1,0 +1,27 @@
+# Front Door AI Index — sakana-ai — 2026-09-17
+# AI vocabulary counted on the provider's root page. Generated; do not edit.
+# `score` is null unless ownership is `own` — see front_door_ai.py.
+front_door_ai:
+  slug: sakana-ai
+  lexicon_version: '1.0'
+  probed_at: '2026-09-17'
+  host: sakana.ai
+  final_host: sakana.ai
+  ownership: own
+  owner: sakana-ai
+  shares_host_with: null
+  inherited_from: null
+  verdict: scored
+  score: 7
+  host_score: 7
+  density: 69.31
+  words: 101
+  tiers:
+    agentic: 0
+    core: 7
+    model: 0
+  ambiguous: 2
+  top_terms:
+    AI: 6
+    intelligence: 2
+    foundation model: 1
