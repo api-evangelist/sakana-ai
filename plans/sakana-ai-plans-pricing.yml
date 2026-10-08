@@ -65,3 +65,27 @@ plans:
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
+x-canonical:
+  generated: '2026-10-08'
+  vocabulary: all/0-working/economics/plans-canonical.yml
+  models:
+  - free
+  units:
+  - period
+  plans:
+  - name: Fugu Beta (Application Only)
+    access: other
+    model: free
+    model_how: derived
+    units:
+    - period
+    periods:
+    - per-use
+  - name: Open-Weight Research Models
+    access: free
+    model: free
+    model_how: derived
+    units:
+    - other
+    periods:
+    - per-use
