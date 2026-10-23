@@ -73,6 +73,46 @@ edges:
     year: '2023'
   detected_by: sweep-accelerator-portfolios.py
   first_seen: '2026-10-21'
+- partner_name: Hugging Face (hugging-face-hub)
+  partner: hugging-face
+  partner_match: mirror
+  mirror_match: domain
+  type: marketplace
+  relationship: platform-app
+  direction: third-party
+  channel: partner-built
+  marketplace: hugging-face-hub
+  evidence: https://huggingface.co/SakanaAI
+  mirror_of: hugging-face/integrations/hugging-face-integration-edges.yml
+  apps:
+  - SakanaAI/ALE-Bench
+  - SakanaAI/AI-CUDA-Engineer-Archive
+  - SakanaAI/self_gen_qa_d2l
+  - SakanaAI/JA-VG-VQA-500
+  - SakanaAI/EDINET-Bench
+  - SakanaAI/JA-VLM-Bench-In-the-Wild
+  - SakanaAI/JA-Multi-Image-VQA
+  - SakanaAI/sudoku-bench-nikoli
+  - SakanaAI/TinySwallow-1.5B-Instruct
+  - SakanaAI/TinySwallow-1.5B-Instruct-GGUF
+  - SakanaAI/TinySwallow-1.5B
+  - SakanaAI/Metom
+  - SakanaAI/kame
+  - SakanaAI/ctm-imagenet
+  - SakanaAI/ctm-maze-large
+  - SakanaAI/EvoLLM-JP-v1-10B
+  - SakanaAI/EvoVLM-JP
+  - SakanaAI/EvoSDXL-JP
+  - SakanaAI/Evo-Ukiyoe
+  - SakanaAI/Llama-3-Karamaru-v1
+  - SakanaAI/Llama-3-EvoVLM-JP-v2
+  - SakanaAI/Evo-Nishikie
+  listing_count: 3
+  detected: '2026-10-23'
+  detected_by: mirror-platform-listings.py
+  category: Hugging Face Hub datasets
+  badges:
+  - Verified publisher (Hugging Face verified organisation)
 generated: '2026-10-13'
 method: searched
 checked:
@@ -83,6 +123,7 @@ checked:
 - https://www.antler.co/portfolio
 - https://www.techstars.com/portfolio
 - https://www.ycombinator.com/companies
+- hugging-face/integrations/hugging-face-integration-edges.yml
 source:
 - https://www.ycombinator.com/companies
 - https://500.co/companies
